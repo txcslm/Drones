@@ -1,0 +1,19 @@
+{
+    "name": "ME.BECS.Destroy",
+    "rootNamespace": "",
+    "references": [
+        "ME.BECS",
+        "Unity.Burst",
+        "ME.BECS.Transforms",
+        "Unity.Mathematics"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

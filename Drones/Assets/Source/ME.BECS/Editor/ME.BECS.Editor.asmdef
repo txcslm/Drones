@@ -1,0 +1,25 @@
+{
+    "name": "ME.BECS.Editor",
+    "rootNamespace": "",
+    "references": [
+        "ME.BECS",
+        "Unity.Burst",
+        "Unity.Collections",
+        "Unity.Mathematics",
+        "ME.BECS.Units",
+        "ME.BECS.Units.Editor",
+        "Unity.Addressables",
+        "Unity.Addressables.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

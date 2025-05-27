@@ -1,0 +1,24 @@
+{
+    "name": "ME.BECS.Network",
+    "rootNamespace": "",
+    "references": [
+        "ME.BECS",
+        "Unity.Burst",
+        "Unity.Collections",
+        "ME.BECS.Features",
+        "ME.BECS.Views",
+        "Unity.Mathematics",
+        "PhotonUnityNetworking",
+        "PhotonRealtime",
+        "Ragon.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

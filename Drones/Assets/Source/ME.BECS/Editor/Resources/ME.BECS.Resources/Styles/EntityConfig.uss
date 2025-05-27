@@ -1,0 +1,227 @@
+.fields-container .field.field-selected {
+    background-color: rgba(0, 127, 255, 0.1);
+}
+
+.fields-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-bottom-width: 2px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.aspect-component-container-field #unity-content {
+    padding: 0px;
+}
+
+.fields-container .aspect-component-container-field .header {
+    flex-direction: row;
+    height: 24px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+    -unity-font-style: bold;
+    opacity: 0.5;
+}
+
+.fields-container .aspect-component-container-field .first-column {
+    flex-grow: 1;
+    align-content: center;
+    height: 22px;
+}
+.fields-container .aspect-component-container-field .first-column Label {
+    -unity-text-align: middle-left;
+    flex-grow: 1;
+}
+
+.fields-container .aspect-component-container-field .column {
+    margin-top: 0px;
+    align-content: center;
+    justify-content: center;
+    height: 22px;
+}
+
+.fields-container .aspect-component-container-field .unity-toggle:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.fields-container .aspect-component-container-field .main-label {
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fields-container .aspect-component-container {
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+    flex-direction: row;
+    height: 24px;
+    max-height: 24px;
+}
+
+.fields-container .aspect-component-container:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+.fields-container .aspect-component-container.last {
+    border-bottom-width: 0px;
+}
+
+.fields-container .aspect-component-container-field .column {
+    border-left-width: 1px;
+    border-color: rgba(255, 255, 255, 0.05);
+    width: 80px;
+    min-width: 80px;
+    height: 22px;
+    align-items: center;
+}
+
+.fields-container .aspect-component-container .sub-label {
+    margin-left: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 4px;
+    -unity-font-style: bold;
+}
+
+.fields-container .in-config .sub-label.in-config {
+    color: cadetblue;
+}
+
+.fields-container .required .sub-label.required {
+    color: chocolate;
+}
+
+.fields-container .not-required .sub-label.not-required {
+    color: darkgoldenrod;
+}
+
+.fields-container .in-runtime .sub-label.in-runtime {
+    color: cornsilk;
+}
+
+.fields-container-root {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.buttons-container Button {
+    background-color: rgba(0, 0, 0, 0.4);
+    align-self: flex-end;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    -unity-font-style: bold;
+    font-size: 18px;
+    height: 18px;
+    width: 34px;
+    padding-bottom: 2px;
+}
+
+.buttons-container Button:disabled {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.buttons-container .add-button {
+    margin-left: 1px;
+    border-bottom-left-radius: 0px;
+}
+
+.buttons-container .remove-button {
+    border-bottom-right-radius: 0px;
+}
+
+.button-selector {
+    border-radius: 5px;
+}
+
+.button-selector-with-content {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.baseconfig-field {
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.component-aspects {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 26px;
+    align-content: center;
+    justify-content: center;
+}
+
+.component-aspects .component-aspect {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 4px;
+}
+
+.tag-component #unity-checkmark {
+    visibility: hidden;
+}
+.tag-component #unity-content {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+}
+.tag-component Toggle,
+.tag-component Toggle:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+.fields-container .field.tag-component .unity-toggle,
+.fields-container .field.tag-component .unity-toggle:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.quaternion-field > Label {
+    -unity-text-align: middle-left;
+    margin-left: 4px;
+}
+
+.quaternion-field {
+    flex-direction: row;
+}
+.quaternion-field Label {
+    width: auto;
+    min-width: 20px;
+}
+.quaternion-field FloatField {
+    width: 30%;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+.quaternion-field FloatInput {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+
+FloatField > Label, IntegerField > Label, UnsignedIntegerField > Label, PopupField > Label, ObjectField > Label, Slider > Label {
+    min-width: 99px;
+    max-width: 135px;
+    width: 36.5%;
+}

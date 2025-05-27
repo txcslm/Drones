@@ -1,0 +1,25 @@
+{
+    "name": "ME.BECS.Pathfinding",
+    "rootNamespace": "",
+    "references": [
+        "ME.BECS",
+        "Unity.Mathematics",
+        "Unity.Collections",
+        "ME.BECS.Transforms",
+        "Unity.Burst",
+        "ME.BECS.Units",
+        "ME.BECS.Players",
+        "ME.BECS.Views",
+        "ME.BECS.Trees",
+        "ME.BECS.SceneEntityView"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

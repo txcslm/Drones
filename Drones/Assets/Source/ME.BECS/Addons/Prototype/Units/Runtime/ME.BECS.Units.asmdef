@@ -1,0 +1,25 @@
+{
+    "name": "ME.BECS.Units",
+    "rootNamespace": "",
+    "references": [
+        "ME.BECS",
+        "ME.BECS.Transforms",
+        "Unity.Mathematics",
+        "ME.BECS.Trees",
+        "Unity.Burst",
+        "ME.BECS.Players",
+        "Unity.Collections",
+        "ME.BECS.Effects",
+        "ME.BECS.Views",
+        "ME.BECS.Destroy"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

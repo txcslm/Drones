@@ -1,0 +1,28 @@
+{
+    "name": "ME.BECS.UnitsHealthBars",
+    "rootNamespace": "",
+    "references": [
+        "ME.BECS",
+        "ME.BECS.Transforms",
+        "Unity.Mathematics",
+        "ME.BECS.Trees",
+        "Unity.Burst",
+        "ME.BECS.Players",
+        "Unity.Collections",
+        "ME.BECS.WorldHelper",
+        "ME.BECS.FogOfWar",
+        "ME.BECS.Units",
+        "ME.BECS.Views",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

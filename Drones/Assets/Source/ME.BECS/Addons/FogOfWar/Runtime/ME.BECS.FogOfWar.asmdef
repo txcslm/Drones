@@ -1,0 +1,30 @@
+{
+    "name": "ME.BECS.FogOfWar",
+    "rootNamespace": "",
+    "references": [
+        "ME.BECS",
+        "ME.BECS.Units",
+        "ME.BECS.Transforms",
+        "Unity.Burst",
+        "ME.BECS.Players",
+        "Unity.Mathematics",
+        "ME.BECS.Pathfinding",
+        "ME.BECS.Views",
+        "ME.BECS.Effects",
+        "ME.BECS.Destroy",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime",
+        "ME.BECS.WorldHelper",
+        "Unity.Collections",
+        "ME.BECS.Trees"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,25 @@
+.vector-field {
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.vector-field > Label {
+    -unity-text-align: middle-left;
+    margin-left: 4px;
+}
+
+.vector-field FloatField {
+    width: 30%;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.vector-field Label {
+    width: auto;
+    min-width: 20px;
+}
+
+.vector-field FloatInput {
+    flex-grow: 1;
+    margin-right: 5px;
+}

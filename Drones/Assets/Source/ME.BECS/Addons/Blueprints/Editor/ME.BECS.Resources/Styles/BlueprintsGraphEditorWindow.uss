@@ -1,0 +1,32 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.container .graphView {
+    width: 100%;
+    height: 100%;
+}
+
+.title-container #title-label {
+    margin-top: 0px;
+    -unity-text-align: middle-left;
+    -unity-font-style: bold;
+}
+
+#headerContainer Toggle {
+    display: none;
+}
+
+GridBackground {
+    --line-color: rgba(255, 255, 255, 0.02);
+    --spacing: 4;
+    --thick-line-color: rgba(255, 255, 255, 0.05);
+    --thick-lines: 1;
+}
+
+
+
+.line {
+    min-height: 30px;
+}

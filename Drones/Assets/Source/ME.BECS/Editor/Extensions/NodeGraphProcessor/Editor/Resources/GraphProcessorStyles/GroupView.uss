@@ -1,0 +1,55 @@
+#headerColorPicker {
+    margin: 8px;
+    width: 50px;
+}
+
+#titleContainer > #titleLabel, #titleContainer > #titleField {
+    margin-left: 55px;
+}
+
+.light-color #headerContainer > #titleContainer > #titleLabel {
+    color: white !important;
+}
+
+.dark-color #headerContainer > #titleContainer > #titleLabel {
+    color: black !important;
+}
+
+.scope > .mainContainer > #headerContainer {
+    flex-direction: row;
+}
+
+#titleContainer #titleLabel {
+    margin: 0px;
+}
+
+#titleContainer #titleField {
+    margin: 0px;
+}
+
+
+.mainContainer {
+    border-top-width: 0px;
+}
+
+#headerContainer {
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mainContainer > #headerContainer > #titleContainer > #titleLabel {
+    font-size: 12px !important;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+}
+
+.mainContainer > #headerContainer > #titleContainer {
+    justify-content: center;
+    width: 100%;
+}
+
+.mainContainer > #headerContainer > #headerColorPicker {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}

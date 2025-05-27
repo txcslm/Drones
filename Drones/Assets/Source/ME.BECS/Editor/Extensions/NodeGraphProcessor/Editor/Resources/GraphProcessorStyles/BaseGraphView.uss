@@ -1,0 +1,266 @@
+.header-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    opacity: 0.13;
+}
+
+.header-vignette {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.unity-toolbar ToolbarButton {
+    -unity-text-align: middle-center;
+    border-left-width: 0px;
+}
+
+#graphRootView {
+    background-color: #101010;
+}
+
+.button-selector {
+    background-color: rgba(22, 116, 238, 0.5);
+    border-radius: 5px;
+    font-size: 11px;
+    height: 24px;
+    margin: 0px;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.button-selector:hover {
+    background-color: rgba(22, 116, 238, 0.3);
+}
+
+.button-selector .unity-foldout__checkmark {
+    margin-left: 10px;
+    background-image: resource("uipackageresources/images/d_in_foldout_on.png");
+}
+
+.node-enabled #node-border {
+    border-top-width: 1px;
+}
+
+.node-disabled #node-border {
+    border-top-color: #d01616;
+}
+.node-disabled #title {
+    background-color: #7B2C2C;
+}
+.node-disabled {
+    opacity: 0.9;
+}
+
+.node-group-disabled #node-border {
+    border-top-width: 2px;
+    border-top-color: #7e1010;
+}
+.node-group-disabled {
+    opacity: 0.9;
+}
+
+.enable-toggle {
+    margin-left: 10px;
+}
+
+.mainContainer {
+    border-top-width: 2px;
+}
+.mainContainer.node-disabled {
+    border-top-width: 2px;
+    border-top-color: #d01616;
+}
+
+
+
+.node-tooltip {
+    display: none;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    border-color: rgb(169, 99, 54);
+    border-width: 2px;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 100%;
+    min-width: 150px;
+    max-width: 298px;
+    white-space: normal;
+}
+
+.node:hover .node-tooltip {
+    display: flex;
+}
+
+.required-dependencies {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    border-color: rgba(54, 169, 152, 0.5);
+    border-width: 2px;
+    padding: 10px;
+    margin: 5px;
+    padding-top: 30px;
+}
+
+.errors {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    border-color: rgba(255, 68, 0, 0.5);
+    border-width: 2px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.errors Label {
+    white-space: normal;
+}
+
+Foldout.required-dependencies {
+    padding: 5px;
+    margin: 5px;
+}
+Foldout.required-dependencies .unity-foldout__content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+Foldout.required-dependencies Toggle Label {
+    -unity-font-style: bold;
+}
+
+.required-dependencies.dependencies-failed {
+    border-color: rgba(169, 54, 54, 0.5);
+}
+
+.required-dependencies.dependencies-warning {
+    border-color: rgba(169, 142, 54, 0.5);
+}
+
+.required-dependencies .required-dependencies-header {
+    -unity-font-style: bold;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.required-dependencies-container {
+    align-items: flex-start;
+    flex-direction: row;
+    padding-bottom: 4px;
+}
+
+.required-dependencies-container .node-required-dependency-typename {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.required-dependencies-container .node-required-dependency-namespace {
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.node-required-dependency-true,
+.node-required-dependency-false,
+.node-required-dependency-warning {
+    display: none;
+}
+
+.node-required-dependency-false {
+    color: rgb(217, 16, 16);
+}
+
+.node-required-dependency-warning {
+    color: rgb(217, 153, 16);
+}
+
+.node-required-dependency-true {
+    color: rgb(125, 217, 14);
+}
+
+.required-dependencies-container .node-required-dependency-checkbox {
+    
+}
+
+.node-required-dependency-false,
+.node-required-dependency-warning {
+    display: flex;
+}
+
+.node-required-dependency-checked .node-required-dependency-false,
+.node-required-dependency-checked .node-required-dependency-warning {
+    display: none;
+}
+
+.node-required-dependency-checked .node-required-dependency-true {
+    display: flex;
+}
+
+
+.mainContainer > #centralContainer {
+    background-color: rgba(45, 45, 45, 1);
+}
+
+.scope {
+    border-color: #1a1a1a;
+}
+
+.default-value {
+    position: absolute;
+    margin-left: -70px;
+    width: 60px;
+    -unity-font-style: normal;
+}
+
+.default-value PropertyField .unity-object-field__label,
+.default-value PropertyField .unity-property-field__label{
+    display: none;
+}
+
+PortView.connected .default-value {
+    display: none;
+}
+
+GridBackground {
+    --line-color: rgba(255, 255, 255, 0.02);
+    --spacing: 4;
+    --thick-line-color: rgba(255, 255, 255, 0.05);
+    --thick-lines: 1;
+}
+
+
+
+.graph-node .subclass-selector-container {
+    display: none;
+}
+
+
+.not-editable #title Toggle {
+    display: none;
+}
+
+.editable-lock {
+    position: absolute;
+    top: 40px;
+    width: 70px;
+    height: 70px;
+    opacity: 0.5;
+}
+
+.editable-lock .editable-header {
+    position: absolute;
+    left: 70px;
+    font-size: 40px;
+    -unity-font-style: bold;
+}
+
+.editable-lock .editable-description {
+    position: absolute;
+    left: 70px;
+    top: 50px;
+}

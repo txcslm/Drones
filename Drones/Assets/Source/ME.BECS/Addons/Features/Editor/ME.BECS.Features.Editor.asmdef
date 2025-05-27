@@ -1,0 +1,25 @@
+{
+    "name": "ME.BECS.Features.Editor",
+    "rootNamespace": "",
+    "references": [
+        "ME.BECS",
+        "ME.BECS.Editor",
+        "ME.BECS.Features",
+        "Unity.Burst",
+        "Unity.Collections",
+        "ME.BECS.Transforms",
+        "ME.BECS.Views",
+        "Unity.Mathematics"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
