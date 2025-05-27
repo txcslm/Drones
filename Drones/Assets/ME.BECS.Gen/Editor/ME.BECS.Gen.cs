@@ -345,6 +345,7 @@ namespace ME.BECS.Editor {
             StaticSystemTypes<Source.Drones.Code.Systems.ExampleSystem>.Validate();
             BurstCompileOnStartNoBurst<Source.Drones.Code.Systems.ExampleSystem>.MakeMethod(null);
             BurstCompileMethod.MakeStart<Source.Drones.Code.Systems.ExampleSystem>(default);
+            StaticTypes<CurrentResourceCountComponent>.AOT();
             StaticTypes<ME.BECS.Attack.AttackComponent>.AOT();
             StaticTypes<ME.BECS.Attack.AttackFilterComponent>.AOT();
             StaticTypes<ME.BECS.Attack.AttackRuntimeFireComponent>.AOT();
@@ -479,7 +480,14 @@ namespace ME.BECS.Editor {
             StaticTypes<ME.BECS.Views.MeshRendererComponent>.AOT();
             StaticTypes<ME.BECS.Views.ViewComponent>.AOT();
             StaticTypes<ME.BECS.Views.ViewCustomIdComponent>.AOT();
-            StaticTypes<Source.Drones.Code.Components.ResourceTag>.AOT();
+            StaticTypes<PositionComponent>.AOT();
+            StaticTypes<Source.Drones.Code.Components.BaseComp.BaseTag>.AOT();
+            StaticTypes<Source.Drones.Code.Components.BusyTagComponent>.AOT();
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.CurrentMoveSpeedComponent>.AOT();
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.InitialMoveSpeedComponent>.AOT();
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.SpawnPointComponent>.AOT();
+            StaticTypes<Source.Drones.Code.Components.DroneComp.DroneTagComponent>.AOT();
+            StaticTypes<Source.Drones.Code.Components.ResourceTagComponent>.AOT();
             AutoDestroyRegistryStatic<ME.BECS.Pathfinding.GraphMaskRuntimeComponent>.Destroy(null);
             StaticTypesShared<ME.BECS.Tests.Tests_Components_Shared.TestCustom1SharedComponent>.AOT();
             StaticTypesShared<ME.BECS.Tests.Tests_Components_Shared.TestCustom2SharedComponent>.AOT();
@@ -696,6 +704,7 @@ namespace ME.BECS.Editor {
             StaticTypes<ME.BECS.Views.MeshRendererComponent>.ApplyGroup(typeof(ME.BECS.Views.ViewsComponentGroup));
             StaticTypes<ME.BECS.Views.ViewComponent>.ApplyGroup(typeof(ME.BECS.Views.ViewsComponentGroup));
             StaticTypes<ME.BECS.Views.ViewCustomIdComponent>.ApplyGroup(typeof(ME.BECS.Views.ViewsComponentGroup));
+            StaticTypes<CurrentResourceCountComponent>.Validate(isTag: false);
             StaticTypes<ME.BECS.Attack.AttackComponent>.Validate(isTag: false);
             StaticTypes<ME.BECS.Attack.AttackComponent>.SetDefaultValue(ME.BECS.Attack.AttackComponent.Default);
             StaticTypes<ME.BECS.Attack.AttackFilterComponent>.Validate(isTag: false);
@@ -835,7 +844,14 @@ namespace ME.BECS.Editor {
             StaticTypes<ME.BECS.Views.MeshRendererComponent>.Validate(isTag: false);
             StaticTypes<ME.BECS.Views.ViewComponent>.Validate(isTag: false);
             StaticTypes<ME.BECS.Views.ViewCustomIdComponent>.Validate(isTag: false);
-            StaticTypes<Source.Drones.Code.Components.ResourceTag>.Validate(isTag: true);
+            StaticTypes<PositionComponent>.Validate(isTag: false);
+            StaticTypes<Source.Drones.Code.Components.BaseComp.BaseTag>.Validate(isTag: true);
+            StaticTypes<Source.Drones.Code.Components.BusyTagComponent>.Validate(isTag: true);
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.CurrentMoveSpeedComponent>.Validate(isTag: false);
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.InitialMoveSpeedComponent>.Validate(isTag: false);
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.SpawnPointComponent>.Validate(isTag: false);
+            StaticTypes<Source.Drones.Code.Components.DroneComp.DroneTagComponent>.Validate(isTag: true);
+            StaticTypes<Source.Drones.Code.Components.ResourceTagComponent>.Validate(isTag: true);
             StaticTypesDestroy<ME.BECS.Pathfinding.GraphMaskRuntimeComponent>.RegisterAutoDestroy(isTag: false);
             StaticTypes<ME.BECS.Tests.Tests_Components_Shared.TestCustom1SharedComponent>.ValidateShared(isTag: false, hasCustomHash: true);
             StaticTypes<ME.BECS.Tests.Tests_Components_Shared.TestCustom2SharedComponent>.ValidateShared(isTag: false, hasCustomHash: true);
