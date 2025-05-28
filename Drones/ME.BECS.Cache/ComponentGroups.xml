@@ -474,6 +474,77 @@
             </Components>
         </Item>
     </Items>
-    <nextAspectId>0</nextAspectId>
-    <Aspects />
+    <nextAspectId>14</nextAspectId>
+    <Aspects>
+        <AspectItem>
+            <id>1</id>
+            <type>ME.BECS.Views.CameraAspect, ME.BECS.Views, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>2</id>
+            <type>ME.BECS.Units.UnitAspect, ME.BECS.Units, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>3</id>
+            <type>ME.BECS.Units.UnitCommandGroupAspect, ME.BECS.Units, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>4</id>
+            <type>ME.BECS.Units.UnitSelectionGroupAspect, ME.BECS.Units, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>5</id>
+            <type>ME.BECS.Units.UnitSelectionTempGroupAspect, ME.BECS.Units, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>6</id>
+            <type>ME.BECS.QuadTreeQueryAspect, ME.BECS.Trees, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>7</id>
+            <type>ME.BECS.QuadTreeAspect, ME.BECS.Trees, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>8</id>
+            <type>ME.BECS.Transforms.TransformAspect, ME.BECS.Transforms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>9</id>
+            <type>ME.BECS.Players.TeamAspect, ME.BECS.Players, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>10</id>
+            <type>ME.BECS.Players.PlayerAspect, ME.BECS.Players, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>11</id>
+            <type>ME.BECS.Effects.EffectAspect, ME.BECS.Effects, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>12</id>
+            <type>ME.BECS.Bullets.BulletAspect, ME.BECS.Bullets, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>13</id>
+            <type>ME.BECS.Attack.AttackAspect, ME.BECS.Attack, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+        <AspectItem>
+            <id>14</id>
+            <type>DroneAspect, Drones, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</type>
+            <info />
+        </AspectItem>
+    </Aspects>
 </ComponentGroupsXml>

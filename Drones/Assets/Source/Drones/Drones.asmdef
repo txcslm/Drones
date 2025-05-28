@@ -4,6 +4,17 @@
     "references": [
         "ME.BECS",
         "ME.BECS.Features",
+        "ME.BECS.Transforms",
+        "Unity.Collections",
+        "Unity.Collections.BurstCompatibilityGen",
+        "ME.BECS.Pathfinding",
+        "ME.BECS.Views",
+        "ME.BECS.SceneEntityView",
+        "ME.BECS.Trees",
+        "ME.BECS.UI",
+        "Unity.Burst",
+        "Unity.Mathematics",
+        "ME.BECS.Destroy",
         "ME.BECS.Network"
     ],
     "includePlatforms": [],

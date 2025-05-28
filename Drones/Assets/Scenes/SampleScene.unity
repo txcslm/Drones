@@ -426,266 +426,120 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1719204247554682521
-Transform:
+--- !u!1001 &58066913783900724
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8845458511874412328}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06446558, y: -0.11758538, z: -0.0049922466}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &3370859578033811268
-Transform:
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3941317071200520534, guid: b426fb0f5722166428238e0933bc2e06, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.06446558
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941317071200520534, guid: b426fb0f5722166428238e0933bc2e06, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.11758538
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941317071200520534, guid: b426fb0f5722166428238e0933bc2e06, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0049922466
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941317071200520534, guid: b426fb0f5722166428238e0933bc2e06, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941317071200520534, guid: b426fb0f5722166428238e0933bc2e06, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941317071200520534, guid: b426fb0f5722166428238e0933bc2e06, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941317071200520534, guid: b426fb0f5722166428238e0933bc2e06, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941317071200520534, guid: b426fb0f5722166428238e0933bc2e06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941317071200520534, guid: b426fb0f5722166428238e0933bc2e06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941317071200520534, guid: b426fb0f5722166428238e0933bc2e06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128690713643118547, guid: b426fb0f5722166428238e0933bc2e06, type: 3}
+      propertyPath: m_Name
+      value: DronesLogicInitializer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b426fb0f5722166428238e0933bc2e06, type: 3}
+--- !u!1001 &3752080784892227187
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4890069632364416757}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06446558, y: -0.11758538, z: -0.0049922466}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4890069632364416757
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3370859578033811268}
-  - component: {fileID: 8247943156607852233}
-  m_Layer: 0
-  m_Name: DronesNetworkInitializer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &6571021874299783143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8845458511874412328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60b304082ad12cb4899d38826b40e085, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-    name:
-      utf8LengthInBytes: 0
-      bytes:
-        offset0000:
-          byte0000: 0
-          byte0001: 0
-          byte0002: 0
-          byte0003: 0
-          byte0004: 0
-          byte0005: 0
-          byte0006: 0
-          byte0007: 0
-          byte0008: 0
-          byte0009: 0
-          byte0010: 0
-          byte0011: 0
-          byte0012: 0
-          byte0013: 0
-          byte0014: 0
-          byte0015: 0
-        offset0016:
-          byte0000: 0
-          byte0001: 0
-          byte0002: 0
-          byte0003: 0
-          byte0004: 0
-          byte0005: 0
-          byte0006: 0
-          byte0007: 0
-          byte0008: 0
-          byte0009: 0
-          byte0010: 0
-          byte0011: 0
-          byte0012: 0
-          byte0013: 0
-          byte0014: 0
-          byte0015: 0
-        offset0032:
-          byte0000: 0
-          byte0001: 0
-          byte0002: 0
-          byte0003: 0
-          byte0004: 0
-          byte0005: 0
-          byte0006: 0
-          byte0007: 0
-          byte0008: 0
-          byte0009: 0
-          byte0010: 0
-          byte0011: 0
-          byte0012: 0
-          byte0013: 0
-          byte0014: 0
-          byte0015: 0
-        byte0048: 0
-        byte0049: 0
-        byte0050: 0
-        byte0051: 0
-        byte0052: 0
-        byte0053: 0
-        byte0054: 0
-        byte0055: 0
-        byte0056: 0
-        byte0057: 0
-        byte0058: 0
-        byte0059: 0
-        byte0060: 0
-        byte0061: 0
-    stateProperties:
-      entitiesCapacity: 100
-      storageCapacity: 1
-      archetypesCapacity: 100
-      queriesCapacity: 100
-      sharedComponentsCapacity: 10
-      oneShotTasksCapacity: 1
-      mode: 1
-    allocatorProperties:
-      sizeInBytesCapacity: 1048576
-  modules:
-    list:
-    - enabled: 1
-      obj: {fileID: 11400000, guid: b6622a03dbf9528488537f70c365eb9f, type: 2}
-  featuresGraph: {fileID: 11400000, guid: 1f4880b5b2f795a4d9ef888c4eda32b8, type: 2}
-  featuresGraphFixedUpdate: {fileID: 0}
-  featuresGraphLateUpdate: {fileID: 0}
---- !u!114 &8247943156607852233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4890069632364416757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8560e4f1e554678af03206413b0d4cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-    name:
-      utf8LengthInBytes: 0
-      bytes:
-        offset0000:
-          byte0000: 0
-          byte0001: 0
-          byte0002: 0
-          byte0003: 0
-          byte0004: 0
-          byte0005: 0
-          byte0006: 0
-          byte0007: 0
-          byte0008: 0
-          byte0009: 0
-          byte0010: 0
-          byte0011: 0
-          byte0012: 0
-          byte0013: 0
-          byte0014: 0
-          byte0015: 0
-        offset0016:
-          byte0000: 0
-          byte0001: 0
-          byte0002: 0
-          byte0003: 0
-          byte0004: 0
-          byte0005: 0
-          byte0006: 0
-          byte0007: 0
-          byte0008: 0
-          byte0009: 0
-          byte0010: 0
-          byte0011: 0
-          byte0012: 0
-          byte0013: 0
-          byte0014: 0
-          byte0015: 0
-        offset0032:
-          byte0000: 0
-          byte0001: 0
-          byte0002: 0
-          byte0003: 0
-          byte0004: 0
-          byte0005: 0
-          byte0006: 0
-          byte0007: 0
-          byte0008: 0
-          byte0009: 0
-          byte0010: 0
-          byte0011: 0
-          byte0012: 0
-          byte0013: 0
-          byte0014: 0
-          byte0015: 0
-        byte0048: 0
-        byte0049: 0
-        byte0050: 0
-        byte0051: 0
-        byte0052: 0
-        byte0053: 0
-        byte0054: 0
-        byte0055: 0
-        byte0056: 0
-        byte0057: 0
-        byte0058: 0
-        byte0059: 0
-        byte0060: 0
-        byte0061: 0
-    stateProperties:
-      entitiesCapacity: 100
-      storageCapacity: 1
-      archetypesCapacity: 100
-      queriesCapacity: 100
-      sharedComponentsCapacity: 10
-      oneShotTasksCapacity: 1
-      mode: 0
-    allocatorProperties:
-      sizeInBytesCapacity: 1048576
-  modules:
-    list:
-    - enabled: 1
-      obj: {fileID: 11400000, guid: d046d07ce3aa9fa4c938ab27aa69d167, type: 2}
-    - enabled: 1
-      obj: {fileID: 11400000, guid: b6622a03dbf9528488537f70c365eb9f, type: 2}
-  featuresGraph: {fileID: 11400000, guid: c8e521c35cda85c48934d0dcd64d3976, type: 2}
---- !u!1 &8845458511874412328
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1719204247554682521}
-  - component: {fileID: 6571021874299783143}
-  m_Layer: 0
-  m_Name: DronesInitializer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2563590639288493165, guid: cce2819cfd5974a4da34f68a93f80684, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.06446558
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563590639288493165, guid: cce2819cfd5974a4da34f68a93f80684, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.11758538
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563590639288493165, guid: cce2819cfd5974a4da34f68a93f80684, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0049922466
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563590639288493165, guid: cce2819cfd5974a4da34f68a93f80684, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563590639288493165, guid: cce2819cfd5974a4da34f68a93f80684, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563590639288493165, guid: cce2819cfd5974a4da34f68a93f80684, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563590639288493165, guid: cce2819cfd5974a4da34f68a93f80684, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563590639288493165, guid: cce2819cfd5974a4da34f68a93f80684, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563590639288493165, guid: cce2819cfd5974a4da34f68a93f80684, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563590639288493165, guid: cce2819cfd5974a4da34f68a93f80684, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209201240215255990, guid: cce2819cfd5974a4da34f68a93f80684, type: 3}
+      propertyPath: m_Name
+      value: DronesVisualInitializer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cce2819cfd5974a4da34f68a93f80684, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -693,5 +547,5 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
-  - {fileID: 1719204247554682521}
-  - {fileID: 3370859578033811268}
+  - {fileID: 58066913783900724}
+  - {fileID: 3752080784892227187}

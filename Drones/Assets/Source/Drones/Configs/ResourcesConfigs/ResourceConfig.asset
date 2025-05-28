@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c23d484dd87431ab96b0d060a518f1, type: 3}
+  m_Name: ResourceConfig
+  m_EditorClassIdentifier: 
+  baseConfig: {fileID: 0}
+  data:
+    components:
+    - rid: 1245683523635642725
+    - rid: 1245683523635642726
+    - rid: 1245683523635642727
+    - rid: 1245683523635642728
+    - rid: 1245683523635642729
+    - rid: 1245683523635642730
+  sharedData:
+    components: []
+  staticData:
+    components: []
+  dataInitialize:
+    components: []
+  aspects:
+    components:
+    - rid: 1245683523635642724
+  collectionsData:
+    nextId: 0
+    items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1245683523635642724
+      type: {class: TransformAspect, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data: 
+    - rid: 1245683523635642725
+      type: {class: LocalPositionComponent, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data:
+        value:
+          x: 0
+          y: 0
+          z: 0
+    - rid: 1245683523635642726
+      type: {class: LocalRotationComponent, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data:
+        value:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+    - rid: 1245683523635642727
+      type: {class: LocalScaleComponent, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data:
+        value:
+          x: 1
+          y: 1
+          z: 1
+    - rid: 1245683523635642728
+      type: {class: BoundsSizeComponent, ns: ME.BECS.Transforms, asm: ME.BECS.Transforms}
+      data:
+        value:
+          x: 1
+          y: 1
+          z: 1
+    - rid: 1245683523635642729
+      type: {class: ResourceTagComponent, ns: Source.Drones.Code.Components, asm: Drones}
+      data: 
+    - rid: 1245683523635642730
+      type: {class: ResourceValueComponent, ns: Source.Drones.Code.Components, asm: Drones}
+      data:
+        Value: 1

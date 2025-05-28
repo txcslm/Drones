@@ -342,9 +342,14 @@ namespace ME.BECS.Editor {
             BurstCompileOnDestroyNoBurst<ME.BECS.UnitsHealthBars.DrawHealthBarsSystem>.MakeMethod(null);
             BurstCompileMethod.MakeUpdate<ME.BECS.UnitsHealthBars.DrawHealthBarsSystem>(default);
             BurstCompileMethod.MakeDestroy<ME.BECS.UnitsHealthBars.DrawHealthBarsSystem>(default);
-            StaticSystemTypes<Source.Drones.Code.Systems.ExampleSystem>.Validate();
-            BurstCompileOnStartNoBurst<Source.Drones.Code.Systems.ExampleSystem>.MakeMethod(null);
-            BurstCompileMethod.MakeStart<Source.Drones.Code.Systems.ExampleSystem>(default);
+            StaticSystemTypes<Source.Drones.Code.Systems.LevelInitializeSystem>.Validate();
+            BurstCompileOnAwake<Source.Drones.Code.Systems.LevelInitializeSystem>.MakeMethod(null);
+            BurstCompileOnAwakeNoBurst<Source.Drones.Code.Systems.LevelInitializeSystem>.MakeMethod(null);
+            BurstCompileMethod.MakeAwake<Source.Drones.Code.Systems.LevelInitializeSystem>(default);
+            StaticSystemTypes<Source.Drones.Code.Systems.SpawnResourceSystem>.Validate();
+            BurstCompileOnUpdate<Source.Drones.Code.Systems.SpawnResourceSystem>.MakeMethod(null);
+            BurstCompileOnUpdateNoBurst<Source.Drones.Code.Systems.SpawnResourceSystem>.MakeMethod(null);
+            BurstCompileMethod.MakeUpdate<Source.Drones.Code.Systems.SpawnResourceSystem>(default);
             StaticTypes<CurrentResourceCountComponent>.AOT();
             StaticTypes<ME.BECS.Attack.AttackComponent>.AOT();
             StaticTypes<ME.BECS.Attack.AttackFilterComponent>.AOT();
@@ -480,14 +485,16 @@ namespace ME.BECS.Editor {
             StaticTypes<ME.BECS.Views.MeshRendererComponent>.AOT();
             StaticTypes<ME.BECS.Views.ViewComponent>.AOT();
             StaticTypes<ME.BECS.Views.ViewCustomIdComponent>.AOT();
-            StaticTypes<PositionComponent>.AOT();
-            StaticTypes<Source.Drones.Code.Components.BaseComp.BaseTag>.AOT();
+            StaticTypes<Source.Drones.Code.Components.BaseComp.BasёeTag>.AOT();
             StaticTypes<Source.Drones.Code.Components.BusyTagComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.DefaultComp.CurrentMoveSpeedComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.DefaultComp.InitialMoveSpeedComponent>.AOT();
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent>.AOT();
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.SpawnIntervalComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.DefaultComp.SpawnPointComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.DroneComp.DroneTagComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.ResourceTagComponent>.AOT();
+            StaticTypes<Source.Drones.Code.Components.ResourceValueComponent>.AOT();
             AutoDestroyRegistryStatic<ME.BECS.Pathfinding.GraphMaskRuntimeComponent>.Destroy(null);
             StaticTypesShared<ME.BECS.Tests.Tests_Components_Shared.TestCustom1SharedComponent>.AOT();
             StaticTypesShared<ME.BECS.Tests.Tests_Components_Shared.TestCustom2SharedComponent>.AOT();
@@ -581,7 +588,8 @@ namespace ME.BECS.Editor {
             StaticSystemTypes<ME.BECS.Units.SteeringSystem>.Validate();
             StaticSystemTypes<ME.BECS.Units.SteeringWithAvoidanceSystem>.Validate();
             StaticSystemTypes<ME.BECS.UnitsHealthBars.DrawHealthBarsSystem>.Validate();
-            StaticSystemTypes<Source.Drones.Code.Systems.ExampleSystem>.Validate();
+            StaticSystemTypes<Source.Drones.Code.Systems.LevelInitializeSystem>.Validate();
+            StaticSystemTypes<Source.Drones.Code.Systems.SpawnResourceSystem>.Validate();
             StaticTypes<ME.BECS.Attack.AttackComponent>.ApplyGroup(typeof(ME.BECS.Attack.AttackComponentGroup));
             StaticTypes<ME.BECS.Attack.AttackerFollowDistanceComponent>.ApplyGroup(typeof(ME.BECS.Attack.AttackComponentGroup));
             StaticTypes<ME.BECS.Attack.AttackFilterComponent>.ApplyGroup(typeof(ME.BECS.Attack.AttackComponentGroup));
@@ -844,14 +852,17 @@ namespace ME.BECS.Editor {
             StaticTypes<ME.BECS.Views.MeshRendererComponent>.Validate(isTag: false);
             StaticTypes<ME.BECS.Views.ViewComponent>.Validate(isTag: false);
             StaticTypes<ME.BECS.Views.ViewCustomIdComponent>.Validate(isTag: false);
-            StaticTypes<PositionComponent>.Validate(isTag: false);
-            StaticTypes<Source.Drones.Code.Components.BaseComp.BaseTag>.Validate(isTag: true);
+            StaticTypes<Source.Drones.Code.Components.BaseComp.BasёeTag>.Validate(isTag: true);
             StaticTypes<Source.Drones.Code.Components.BusyTagComponent>.Validate(isTag: true);
             StaticTypes<Source.Drones.Code.Components.DefaultComp.CurrentMoveSpeedComponent>.Validate(isTag: false);
             StaticTypes<Source.Drones.Code.Components.DefaultComp.InitialMoveSpeedComponent>.Validate(isTag: false);
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent>.Validate(isTag: false);
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.SpawnIntervalComponent>.Validate(isTag: false);
             StaticTypes<Source.Drones.Code.Components.DefaultComp.SpawnPointComponent>.Validate(isTag: false);
             StaticTypes<Source.Drones.Code.Components.DroneComp.DroneTagComponent>.Validate(isTag: true);
             StaticTypes<Source.Drones.Code.Components.ResourceTagComponent>.Validate(isTag: true);
+            StaticTypes<Source.Drones.Code.Components.ResourceValueComponent>.Validate(isTag: false);
+            StaticTypes<Source.Drones.Code.Components.ResourceValueComponent>.SetDefaultValue(Source.Drones.Code.Components.ResourceValueComponent.Default);
             StaticTypesDestroy<ME.BECS.Pathfinding.GraphMaskRuntimeComponent>.RegisterAutoDestroy(isTag: false);
             StaticTypes<ME.BECS.Tests.Tests_Components_Shared.TestCustom1SharedComponent>.ValidateShared(isTag: false, hasCustomHash: true);
             StaticTypes<ME.BECS.Tests.Tests_Components_Shared.TestCustom2SharedComponent>.ValidateShared(isTag: false, hasCustomHash: true);
@@ -874,6 +885,7 @@ namespace ME.BECS.Editor {
             StaticTypes<ME.BECS.Pathfinding.GraphMaskComponent>.ValidateStatic(isTag: false);
             StaticTypes<ME.BECS.Views.InstantiateAvatarViewComponent>.ValidateStatic(isTag: false);
             StaticTypes<ME.BECS.Views.InstantiateViewComponent>.ValidateStatic(isTag: false);
+            AspectTypeInfo<DroneAspect>.Validate();
             AspectTypeInfo<ME.BECS.Attack.AttackAspect>.Validate();
             AspectTypeInfo.with.Get(AspectTypeInfo<ME.BECS.Attack.AttackAspect>.typeId).Resize(2);
             AspectTypeInfo.with.Get(AspectTypeInfo<ME.BECS.Attack.AttackAspect>.typeId).Get(0) = StaticTypes<ME.BECS.Attack.AttackComponent>.typeId;
@@ -974,6 +986,7 @@ namespace ME.BECS.Editor {
             EarlyInit.DoComponents<ME.BECS.Views.Jobs.JobAddToScene, ME.BECS.Views.IsViewRequested>();
             EarlyInit.DoComponents<ME.BECS.Views.Jobs.JobAssignViews, ME.BECS.Views.AssignViewComponent>();
             EarlyInit.DoComponents<ME.BECS.Views.Jobs.JobRemoveFromScene, ME.BECS.Views.ViewComponent>();
+            EarlyInit.DoComponents<Source.Drones.Code.Systems.SpawnJob, Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent>();
             EarlyInit.DoAspect<ME.BECS.Attack.CanFireSystem.Job, ME.BECS.Attack.AttackAspect>();
             EarlyInit.DoAspect<ME.BECS.Attack.ChangeAttackTargetFromShadowCopySystem.TargetJob, ME.BECS.Attack.AttackAspect>();
             EarlyInit.DoAspect<ME.BECS.Attack.ChangeAttackTargetFromShadowCopySystem.TargetsJob, ME.BECS.Attack.AttackAspect>();
@@ -2809,11 +2822,29 @@ namespace ME.BECS.Editor {
                 list.Add(new ComponentDependencyGraphInfo() { type = typeof(ME.BECS.IsInactive), op = 0 });
             }
             {
-                // system: Source.Drones.Code.Systems.ExampleSystem
+                // system: Source.Drones.Code.Systems.LevelInitializeSystem
                 var list = new s::List<ComponentDependencyGraphInfo>();
                 var errors = new s::List<Systems.SystemDependenciesCodeGenerator.MethodInfoDependencies.Error>();
-                systemDependenciesComponentsGraph.Add(typeof(Source.Drones.Code.Systems.ExampleSystem), list);
-                systemDependenciesGraphErrors.Add(typeof(Source.Drones.Code.Systems.ExampleSystem), errors);
+                systemDependenciesComponentsGraph.Add(typeof(Source.Drones.Code.Systems.LevelInitializeSystem), list);
+                systemDependenciesGraphErrors.Add(typeof(Source.Drones.Code.Systems.LevelInitializeSystem), errors);
+            }
+            {
+                // system: Source.Drones.Code.Systems.SpawnResourceSystem
+                var list = new s::List<ComponentDependencyGraphInfo>();
+                var errors = new s::List<Systems.SystemDependenciesCodeGenerator.MethodInfoDependencies.Error>();
+                systemDependenciesComponentsGraph.Add(typeof(Source.Drones.Code.Systems.SpawnResourceSystem), list);
+                systemDependenciesGraphErrors.Add(typeof(Source.Drones.Code.Systems.SpawnResourceSystem), errors);
+                // |- OnUpdate:
+                // |--- ReadWrite: Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent
+                // |--- ReadWrite: ME.BECS.Views.ViewComponent
+                // |--- ReadWrite: ME.BECS.Views.IsViewRequested
+                // |--- ReadWrite: ME.BECS.EntityConfigComponent
+                // |--- ReadOnly: ME.BECS.IsInactive
+                list.Add(new ComponentDependencyGraphInfo() { type = typeof(Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent), op = 2 });
+                list.Add(new ComponentDependencyGraphInfo() { type = typeof(ME.BECS.Views.ViewComponent), op = 2 });
+                list.Add(new ComponentDependencyGraphInfo() { type = typeof(ME.BECS.Views.IsViewRequested), op = 2 });
+                list.Add(new ComponentDependencyGraphInfo() { type = typeof(ME.BECS.EntityConfigComponent), op = 2 });
+                list.Add(new ComponentDependencyGraphInfo() { type = typeof(ME.BECS.IsInactive), op = 0 });
             }
             // Nodes:
             systemDependenciesGraph.Add(typeof(ME.BECS.Attack.CanFireSystem),new s::HashSet<System.Type>() {
@@ -2897,7 +2928,8 @@ namespace ME.BECS.Editor {
                 typeof(ME.BECS.Transforms.TransformWorldMatrixUpdateSystem),
                 typeof(ME.BECS.Units.DestroySystem),
                 typeof(ME.BECS.Units.SteeringSystem),
-                typeof(ME.BECS.Units.SteeringWithAvoidanceSystem)
+                typeof(ME.BECS.Units.SteeringWithAvoidanceSystem),
+                typeof(Source.Drones.Code.Systems.SpawnResourceSystem)
             });
             systemDependenciesGraph.Add(typeof(ME.BECS.Attack.MoveToAttackerSystem),new s::HashSet<System.Type>() {
                 typeof(ME.BECS.Attack.ChangeAttackTargetFromShadowCopySystem),
@@ -2934,7 +2966,8 @@ namespace ME.BECS.Editor {
                 typeof(ME.BECS.Units.DestroySystem),
                 typeof(ME.BECS.Units.HitSystem),
                 typeof(ME.BECS.Units.SteeringSystem),
-                typeof(ME.BECS.Units.SteeringWithAvoidanceSystem)
+                typeof(ME.BECS.Units.SteeringWithAvoidanceSystem),
+                typeof(Source.Drones.Code.Systems.SpawnResourceSystem)
             });
             systemDependenciesGraph.Add(typeof(ME.BECS.Attack.ReloadSystem),new s::HashSet<System.Type>() {
                 typeof(ME.BECS.Attack.CanFireSystem),
@@ -3089,7 +3122,8 @@ namespace ME.BECS.Editor {
                 typeof(ME.BECS.QuadTreeQuerySystem),
                 typeof(ME.BECS.Transforms.TransformWorldMatrixUpdateSystem),
                 typeof(ME.BECS.Units.DestroySystem),
-                typeof(ME.BECS.Units.HitSystem)
+                typeof(ME.BECS.Units.HitSystem),
+                typeof(Source.Drones.Code.Systems.SpawnResourceSystem)
             });
             systemDependenciesGraph.Add(typeof(ME.BECS.Bullets.FlySystem),new s::HashSet<System.Type>() {
                 typeof(ME.BECS.Attack.FireSystem),
@@ -3329,7 +3363,8 @@ namespace ME.BECS.Editor {
                 typeof(ME.BECS.Pathfinding.FollowPathWithAvoidanceSystem),
                 typeof(ME.BECS.Pathfinding.LookAtSystem),
                 typeof(ME.BECS.Pathfinding.ShowBuildingGridSystem),
-                typeof(ME.BECS.Units.DestroySystem)
+                typeof(ME.BECS.Units.DestroySystem),
+                typeof(Source.Drones.Code.Systems.SpawnResourceSystem)
             });
             systemDependenciesGraph.Add(typeof(ME.BECS.FogOfWar.QuadTreeQueryFogOfWarSystem),new s::HashSet<System.Type>() {
                 typeof(ME.BECS.Attack.FireSystem),
@@ -3382,7 +3417,8 @@ namespace ME.BECS.Editor {
                 typeof(ME.BECS.Pathfinding.ShowBuildingGridSystem),
                 typeof(ME.BECS.Players.PlayersSystem),
                 typeof(ME.BECS.QuadTreeQuerySystem),
-                typeof(ME.BECS.Units.DestroySystem)
+                typeof(ME.BECS.Units.DestroySystem),
+                typeof(Source.Drones.Code.Systems.SpawnResourceSystem)
             });
             systemDependenciesGraph.Add(typeof(ME.BECS.FogOfWar.ShadowCopyUpdateSystem),new s::HashSet<System.Type>() {
                 typeof(ME.BECS.Attack.FireSystem),
@@ -3410,7 +3446,8 @@ namespace ME.BECS.Editor {
                 typeof(ME.BECS.Pathfinding.ShowBuildingGridSystem),
                 typeof(ME.BECS.QuadTreeQuerySystem),
                 typeof(ME.BECS.Transforms.TransformWorldMatrixUpdateSystem),
-                typeof(ME.BECS.Units.DestroySystem)
+                typeof(ME.BECS.Units.DestroySystem),
+                typeof(Source.Drones.Code.Systems.SpawnResourceSystem)
             });
             systemDependenciesGraph.Add(typeof(ME.BECS.FogOfWar.UpdateSystem),new s::HashSet<System.Type>() {
                 typeof(ME.BECS.Attack.FireSystem),
@@ -3764,7 +3801,8 @@ namespace ME.BECS.Editor {
                 typeof(ME.BECS.Players.PlayersSystem),
                 typeof(ME.BECS.Units.HitSystem),
                 typeof(ME.BECS.Units.SteeringSystem),
-                typeof(ME.BECS.Units.SteeringWithAvoidanceSystem)
+                typeof(ME.BECS.Units.SteeringWithAvoidanceSystem),
+                typeof(Source.Drones.Code.Systems.SpawnResourceSystem)
             });
             systemDependenciesGraph.Add(typeof(ME.BECS.Units.HitSystem),new s::HashSet<System.Type>() {
                 typeof(ME.BECS.Bullets.DestroySystem),
@@ -3853,7 +3891,17 @@ namespace ME.BECS.Editor {
                 typeof(ME.BECS.Units.SteeringSystem),
                 typeof(ME.BECS.Units.SteeringWithAvoidanceSystem)
             });
-            systemDependenciesGraph.Add(typeof(Source.Drones.Code.Systems.ExampleSystem),null);
+            systemDependenciesGraph.Add(typeof(Source.Drones.Code.Systems.LevelInitializeSystem),null);
+            systemDependenciesGraph.Add(typeof(Source.Drones.Code.Systems.SpawnResourceSystem),new s::HashSet<System.Type>() {
+                typeof(ME.BECS.Attack.FireSystem),
+                typeof(ME.BECS.Bullets.DestroySystem),
+                typeof(ME.BECS.Commands.CommandBuildSystem),
+                typeof(ME.BECS.Commands.CommandBuildUpdateSystem),
+                typeof(ME.BECS.FogOfWar.CreateTextureSystem),
+                typeof(ME.BECS.FogOfWar.ShadowCopySystem),
+                typeof(ME.BECS.FogOfWar.ShadowCopyUpdateSystem),
+                typeof(ME.BECS.Units.DestroySystem)
+            });
         }
         
         
@@ -4030,6 +4078,10 @@ namespace ME.BECS.Editor {
             ME.BECS.Views.ViewsTypeInfo.RegisterType<ME.BECS.Views.DefaultView>(new ME.BECS.Views.ViewTypeInfo() {
                 flags = (ME.BECS.Views.TypeFlags)0,
                 tracker = ViewsTracker.info[ViewsTracker.Tracker<ME.BECS.Views.DefaultView>.id],
+            });
+            ME.BECS.Views.ViewsTypeInfo.RegisterType<ResourceView>(new ME.BECS.Views.ViewTypeInfo() {
+                flags = (ME.BECS.Views.TypeFlags)0,
+                tracker = ViewsTracker.info[ViewsTracker.Tracker<ResourceView>.id],
             });
         }
     }

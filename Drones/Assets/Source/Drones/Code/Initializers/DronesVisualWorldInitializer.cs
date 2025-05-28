@@ -4,9 +4,9 @@ using UnityEngine;
 namespace Drones 
 {
     [DefaultExecutionOrder(-80)]
-    public class DronesInitializer : WorldInitializer 
+    public class DronesVisualWorldInitializer : WorldInitializer 
     {
-        public static DronesInitializer Instance;
+        public static DronesVisualWorldInitializer Instance;
         
         protected override void Awake() 
         {
@@ -16,7 +16,7 @@ namespace Drones
             
         protected override void DoWorldAwake() 
         {
-            world.parent = DronesInitializer.Instance.world;
+            world.parent = Instance.world;
             base.DoWorldAwake();
         }
     }

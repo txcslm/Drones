@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7128690713643118547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3941317071200520534}
+  - component: {fileID: 2015694473958684586}
+  m_Layer: 0
+  m_Name: DronesLogicInitializer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3941317071200520534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7128690713643118547}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.06446558, y: -0.11758538, z: -0.0049922466}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2015694473958684586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7128690713643118547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c34e766bba49c994602eace5fc3e94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+    name:
+      utf8LengthInBytes: 11
+      bytes:
+        offset0000:
+          byte0000: 76
+          byte0001: 111
+          byte0002: 103
+          byte0003: 105
+          byte0004: 99
+          byte0005: 32
+          byte0006: 87
+          byte0007: 111
+          byte0008: 114
+          byte0009: 108
+          byte0010: 100
+          byte0011: 0
+          byte0012: 0
+          byte0013: 0
+          byte0014: 0
+          byte0015: 0
+        offset0016:
+          byte0000: 0
+          byte0001: 0
+          byte0002: 0
+          byte0003: 0
+          byte0004: 0
+          byte0005: 0
+          byte0006: 0
+          byte0007: 0
+          byte0008: 0
+          byte0009: 0
+          byte0010: 0
+          byte0011: 0
+          byte0012: 0
+          byte0013: 0
+          byte0014: 0
+          byte0015: 0
+        offset0032:
+          byte0000: 0
+          byte0001: 0
+          byte0002: 0
+          byte0003: 0
+          byte0004: 0
+          byte0005: 0
+          byte0006: 0
+          byte0007: 0
+          byte0008: 0
+          byte0009: 0
+          byte0010: 0
+          byte0011: 0
+          byte0012: 0
+          byte0013: 0
+          byte0014: 0
+          byte0015: 0
+        byte0048: 0
+        byte0049: 0
+        byte0050: 0
+        byte0051: 0
+        byte0052: 0
+        byte0053: 0
+        byte0054: 0
+        byte0055: 0
+        byte0056: 0
+        byte0057: 0
+        byte0058: 0
+        byte0059: 0
+        byte0060: 0
+        byte0061: 0
+    stateProperties:
+      entitiesCapacity: 100
+      storageCapacity: 1
+      archetypesCapacity: 100
+      queriesCapacity: 100
+      sharedComponentsCapacity: 10
+      oneShotTasksCapacity: 1
+      mode: 0
+    allocatorProperties:
+      sizeInBytesCapacity: 1048576
+  modules:
+    list:
+    - enabled: 1
+      obj: {fileID: 11400000, guid: 0e4406564c3d9b248ba10e037380704e, type: 2}
+    - enabled: 1
+      obj: {fileID: 11400000, guid: b6622a03dbf9528488537f70c365eb9f, type: 2}
+  featuresGraph: {fileID: 11400000, guid: c8e521c35cda85c48934d0dcd64d3976, type: 2}

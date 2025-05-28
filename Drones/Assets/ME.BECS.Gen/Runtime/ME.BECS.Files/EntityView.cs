@@ -29,7 +29,7 @@ namespace ME.BECS {
             StaticTypes<ME.BECS.Transforms.LocalPositionComponent>.TrackVersion();
             StaticTypes<ME.BECS.Transforms.LocalRotationComponent>.TrackVersion();
             StaticTypes<ME.BECS.Views.CameraComponent>.TrackVersion();
-            ViewsTracker.SetTracker(15u);
+            ViewsTracker.SetTracker(16u);
             // ==============================
             // ME.BECS.FogOfWar.FogOfWarView
             {
@@ -77,6 +77,12 @@ namespace ME.BECS {
             {
                 var viewInfo = new ViewsTracker.ViewInfo();
                 ViewsTracker.TrackView<ME.BECS.Views.DefaultView>(viewInfo);
+            }
+            // ==============================
+            // ResourceView
+            {
+                var viewInfo = new ViewsTracker.ViewInfo();
+                ViewsTracker.TrackView<ResourceView>(viewInfo);
             }
             // ==============================
             // ME.BECS.Attack.AnimatorAttackViewModule

@@ -2,5 +2,5 @@ using ME.BECS;
 
 namespace Source.Drones.Code.Components
 {
-  public struct BusyTagComponent : IConfigComponent { }
+  public struct BusyTagComponent : IComponent { }
 }

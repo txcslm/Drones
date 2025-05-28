@@ -12,8 +12,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e9c3df6c94406bbe8e411da76ce60e, type: 3}
   m_Name: ObjectReferenceRegistry
   m_EditorClassIdentifier: 
-  sourceId: 0
-  items: []
+  sourceId: 223
+  items:
+  - source: {fileID: 11400000, guid: 4fd18f75d8eacbb43baeeee2451a157a, type: 2}
+    sourceReference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    isGameObject: 0
+    sourceType: ME.BECS.EntityConfig, ME.BECS, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    sourceId: 211
+    referencesCount: 2
+    customData:
+      rid: -2
+  - source: {fileID: 3476467616801814491, guid: 5123ac4ecb038e449b79b855180496b7, type: 3}
+    sourceReference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    isGameObject: 1
+    sourceType: ResourceView, Drones, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    sourceId: 223
+    referencesCount: 2
+    customData:
+      rid: 1245683523635642745
+  - source: {fileID: 11400000, guid: 5e7bc72eaeeb3864781f4b45f0fa5b27, type: 2}
+    sourceReference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    isGameObject: 0
+    sourceType: ME.BECS.EntityConfig, ME.BECS, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    sourceId: 24
+    referencesCount: 1
+    customData:
+      rid: -2
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1245683523635642745
+      type: {class: ViewObjectItemData, ns: ME.BECS.Views, asm: ME.BECS.Views}
+      data:
+        info:
+          prefabId: 0
+          typeInfo:
+            flags: 0
+            cullingType: 0
+          sceneSource: 0
+          isLoaded: 0
+          flags: 0
