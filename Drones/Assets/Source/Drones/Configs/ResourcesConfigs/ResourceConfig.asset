@@ -21,6 +21,7 @@ MonoBehaviour:
     - rid: 1245683523635642728
     - rid: 1245683523635642729
     - rid: 1245683523635642730
+    - rid: 1245683542965616981
   sharedData:
     components: []
   staticData:
@@ -76,3 +77,10 @@ MonoBehaviour:
       type: {class: ResourceValueComponent, ns: Source.Drones.Code.Components, asm: Drones}
       data:
         Value: 1
+    - rid: 1245683542965616981
+      type: {class: DefaultViewComponent, ns: Source.Drones.Code.Components.DefaultComp, asm: Drones}
+      data:
+        View:
+          viewSource:
+            providerId: 1
+            prefabId: 223

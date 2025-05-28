@@ -315,6 +315,7 @@ namespace ME.BECS {
             public SafetyComponentContainerRW<ME.BECS.EntityConfigComponent> ME_BECS_EntityConfigComponent;
             public SafetyComponentContainerRW<ME.BECS.Views.IsViewRequested> ME_BECS_Views_IsViewRequested;
             public SafetyComponentContainerRW<ME.BECS.Views.ViewComponent> ME_BECS_Views_ViewComponent;
+            public SafetyComponentContainerRW<Source.Drones.Code.Components.DefaultComp.DefaultViewComponent> Source_Drones_Code_Components_DefaultComp_DefaultViewComponent;
             public SafetyComponentContainerRW<Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent> Source_Drones_Code_Components_DefaultComp_ResourceSpawnerComponent;
         }
         public struct JobDebugData25 { // ME.BECS.Attack.CanFireSystem+Job

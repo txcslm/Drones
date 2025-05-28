@@ -315,6 +315,7 @@ namespace ME.BECS {
             [NativeDisableContainerSafetyRestriction] public SafetyComponentContainerRW<ME.BECS.EntityConfigComponent> ME_BECS_EntityConfigComponent;
             [NativeDisableContainerSafetyRestriction] public SafetyComponentContainerRW<ME.BECS.Views.IsViewRequested> ME_BECS_Views_IsViewRequested;
             [NativeDisableContainerSafetyRestriction] public SafetyComponentContainerRW<ME.BECS.Views.ViewComponent> ME_BECS_Views_ViewComponent;
+            [NativeDisableContainerSafetyRestriction] public SafetyComponentContainerRW<Source.Drones.Code.Components.DefaultComp.DefaultViewComponent> Source_Drones_Code_Components_DefaultComp_DefaultViewComponent;
             [NativeDisableContainerSafetyRestriction] public SafetyComponentContainerRW<Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent> Source_Drones_Code_Components_DefaultComp_ResourceSpawnerComponent;
         }
         public struct JobDebugData25Unsafe { // ME.BECS.Attack.CanFireSystem+Job

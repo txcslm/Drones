@@ -42,14 +42,6 @@ namespace ME.BECS {
             {
                 var item = allocator.Allocate(TSize<Source.Drones.Code.Systems.SpawnResourceSystem>.sizeInt, TAlign<Source.Drones.Code.Systems.SpawnResourceSystem>.alignInt);
                 *(Source.Drones.Code.Systems.SpawnResourceSystem*)item = new Source.Drones.Code.Systems.SpawnResourceSystem {
-                    ResourceView = new ME.BECS.Views.View {
-                        viewSource = new ME.BECS.Views.ViewSource {
-                            providerId = 1,
-                            prefabId = 223,
-                        }
-                        ,
-                    }
-                    ,
                     ResourceConfig = new ME.BECS.Config {
                         sourceId = 211,
                     }

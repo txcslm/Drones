@@ -253,10 +253,6 @@ MonoBehaviour:
     - rid: 1245683523635642742
       type: {class: SpawnResourceSystem, ns: Source.Drones.Code.Systems, asm: Drones}
       data:
-        ResourceView:
-          viewSource:
-            providerId: 1
-            prefabId: 223
         ResourceConfig:
           sourceId: 211
     - rid: 1245683532845809911
@@ -295,7 +291,7 @@ MonoBehaviour:
         computeOrder: 1
         position:
           serializedVersion: 2
-          x: -544
+          x: -543
           y: -340.5
           width: 300
           height: 243
@@ -309,15 +305,5 @@ MonoBehaviour:
     - rid: 1245683532845809912
       type: {class: LevelInitializeSystem, ns: Source.Drones.Code.Systems, asm: Drones}
       data:
-        RedBaseView:
-          viewSource:
-            providerId: 0
-            prefabId: 0
-        BlueBaseView:
-          viewSource:
-            providerId: 0
-            prefabId: 0
-        BaseConfig:
-          sourceId: 0
         SpawnerConfig:
           sourceId: 24

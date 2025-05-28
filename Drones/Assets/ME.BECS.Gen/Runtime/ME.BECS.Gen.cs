@@ -344,6 +344,7 @@ namespace ME.BECS {
             StaticTypes<Source.Drones.Code.Components.BaseComp.BasёeTag>.AOT();
             StaticTypes<Source.Drones.Code.Components.BusyTagComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.DefaultComp.CurrentMoveSpeedComponent>.AOT();
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.DefaultViewComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.DefaultComp.InitialMoveSpeedComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.DefaultComp.SpawnIntervalComponent>.AOT();
@@ -662,6 +663,7 @@ namespace ME.BECS {
             StaticTypes<Source.Drones.Code.Components.BaseComp.BasёeTag>.Validate(isTag: true);
             StaticTypes<Source.Drones.Code.Components.BusyTagComponent>.Validate(isTag: true);
             StaticTypes<Source.Drones.Code.Components.DefaultComp.CurrentMoveSpeedComponent>.Validate(isTag: false);
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.DefaultViewComponent>.Validate(isTag: false);
             StaticTypes<Source.Drones.Code.Components.DefaultComp.InitialMoveSpeedComponent>.Validate(isTag: false);
             StaticTypes<Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent>.Validate(isTag: false);
             StaticTypes<Source.Drones.Code.Components.DefaultComp.SpawnIntervalComponent>.Validate(isTag: false);

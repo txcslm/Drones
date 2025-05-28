@@ -696,6 +696,7 @@ namespace ME.BECS {
                     data->ME_BECS_EntityConfigComponent = new SafetyComponentContainerRW<ME.BECS.EntityConfigComponent>(buffer->state, buffer->worldId);
                     data->ME_BECS_Views_IsViewRequested = new SafetyComponentContainerRW<ME.BECS.Views.IsViewRequested>(buffer->state, buffer->worldId);
                     data->ME_BECS_Views_ViewComponent = new SafetyComponentContainerRW<ME.BECS.Views.ViewComponent>(buffer->state, buffer->worldId);
+                    data->Source_Drones_Code_Components_DefaultComp_DefaultViewComponent = new SafetyComponentContainerRW<Source.Drones.Code.Components.DefaultComp.DefaultViewComponent>(buffer->state, buffer->worldId);
                     data->Source_Drones_Code_Components_DefaultComp_ResourceSpawnerComponent = new SafetyComponentContainerRW<Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent>(buffer->state, buffer->worldId);
                     return data;
                 }

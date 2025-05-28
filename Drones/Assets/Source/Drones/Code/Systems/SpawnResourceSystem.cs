@@ -3,25 +3,26 @@ using ME.BECS.Jobs;
 using ME.BECS.Views;
 using Source.Drones.Code.Components.DefaultComp;
 using Unity.Burst;
+using UnityEngine;
 
 namespace Source.Drones.Code.Systems
 {
   [BurstCompile]
   public struct SpawnResourceSystem : IUpdate
   {
-    public View ResourceView;
     public Config ResourceConfig;
 
     public void OnUpdate(ref SystemContext ctx)
     {
+      var spawnJob = new SpawnJob
+      {
+        Config = ResourceConfig,
+        DeltaTime = ctx.deltaTime
+      };
+      
       var handle = ctx.Query()
         .With<ResourceSpawnerComponent>()
-        .Schedule<SpawnJob, ResourceSpawnerComponent>(new SpawnJob
-        {
-          View = ResourceView,
-          Config = ResourceConfig,
-          DeltaTime = ctx.deltaTime
-        });
+        .Schedule<SpawnJob, ResourceSpawnerComponent>(spawnJob);
       
       ctx.SetDependency(handle);
     }
@@ -30,7 +31,6 @@ namespace Source.Drones.Code.Systems
   [BurstCompile]
   public struct SpawnJob : IJobForComponents<ResourceSpawnerComponent>
   {
-    public View View;
     public Config Config;
     public float DeltaTime;
 
@@ -43,9 +43,9 @@ namespace Source.Drones.Code.Systems
       
       spawner.Timer = spawner.SpawnInterval;
 
-      var resEnt = Ent.New(jobInfo.worldId);
+      var resEnt = Ent.New(jobInfo, "Resource");
       Config.Apply(resEnt);
-      resEnt.InstantiateView(View);
+      resEnt.InstantiateView(resEnt.Get<DefaultViewComponent>().View);
     }
   }
 }

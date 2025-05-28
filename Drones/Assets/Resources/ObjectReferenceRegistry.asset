@@ -38,7 +38,7 @@ MonoBehaviour:
     isGameObject: 1
     sourceType: ResourceView, Drones, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     sourceId: 223
-    referencesCount: 2
+    referencesCount: 3
     customData:
       rid: 1245683523635642745
   - source: {fileID: 11400000, guid: 5e7bc72eaeeb3864781f4b45f0fa5b27, type: 2}

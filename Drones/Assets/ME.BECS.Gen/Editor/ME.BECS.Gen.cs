@@ -488,6 +488,7 @@ namespace ME.BECS.Editor {
             StaticTypes<Source.Drones.Code.Components.BaseComp.BasёeTag>.AOT();
             StaticTypes<Source.Drones.Code.Components.BusyTagComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.DefaultComp.CurrentMoveSpeedComponent>.AOT();
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.DefaultViewComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.DefaultComp.InitialMoveSpeedComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent>.AOT();
             StaticTypes<Source.Drones.Code.Components.DefaultComp.SpawnIntervalComponent>.AOT();
@@ -855,6 +856,7 @@ namespace ME.BECS.Editor {
             StaticTypes<Source.Drones.Code.Components.BaseComp.BasёeTag>.Validate(isTag: true);
             StaticTypes<Source.Drones.Code.Components.BusyTagComponent>.Validate(isTag: true);
             StaticTypes<Source.Drones.Code.Components.DefaultComp.CurrentMoveSpeedComponent>.Validate(isTag: false);
+            StaticTypes<Source.Drones.Code.Components.DefaultComp.DefaultViewComponent>.Validate(isTag: false);
             StaticTypes<Source.Drones.Code.Components.DefaultComp.InitialMoveSpeedComponent>.Validate(isTag: false);
             StaticTypes<Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent>.Validate(isTag: false);
             StaticTypes<Source.Drones.Code.Components.DefaultComp.SpawnIntervalComponent>.Validate(isTag: false);
@@ -2836,11 +2838,13 @@ namespace ME.BECS.Editor {
                 systemDependenciesGraphErrors.Add(typeof(Source.Drones.Code.Systems.SpawnResourceSystem), errors);
                 // |- OnUpdate:
                 // |--- ReadWrite: Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent
+                // |--- ReadWrite: Source.Drones.Code.Components.DefaultComp.DefaultViewComponent
                 // |--- ReadWrite: ME.BECS.Views.ViewComponent
                 // |--- ReadWrite: ME.BECS.Views.IsViewRequested
                 // |--- ReadWrite: ME.BECS.EntityConfigComponent
                 // |--- ReadOnly: ME.BECS.IsInactive
                 list.Add(new ComponentDependencyGraphInfo() { type = typeof(Source.Drones.Code.Components.DefaultComp.ResourceSpawnerComponent), op = 2 });
+                list.Add(new ComponentDependencyGraphInfo() { type = typeof(Source.Drones.Code.Components.DefaultComp.DefaultViewComponent), op = 2 });
                 list.Add(new ComponentDependencyGraphInfo() { type = typeof(ME.BECS.Views.ViewComponent), op = 2 });
                 list.Add(new ComponentDependencyGraphInfo() { type = typeof(ME.BECS.Views.IsViewRequested), op = 2 });
                 list.Add(new ComponentDependencyGraphInfo() { type = typeof(ME.BECS.EntityConfigComponent), op = 2 });

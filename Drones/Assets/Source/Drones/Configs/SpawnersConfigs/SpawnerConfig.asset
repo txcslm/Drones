@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseConfig: {fileID: 0}
   data:
-    components: []
+    components:
+    - rid: 1245683542965616720
+    - rid: 1245683542965616980
   sharedData:
     components: []
   staticData:
@@ -22,46 +24,22 @@ MonoBehaviour:
   dataInitialize:
     components: []
   aspects:
-    components:
-    - rid: 1245683535044411464
-    - rid: 1245683535044411465
-    - rid: 1245683535044411466
-    - rid: 1245683535044411467
-    - rid: 1245683535044411468
-    - rid: 1245683535044411469
+    components: []
   collectionsData:
     nextId: 0
     items: []
   references:
     version: 2
     RefIds:
-    - rid: 1245683535044411464
+    - rid: 1245683542965616720
       type: {class: ResourceSpawnerComponent, ns: Source.Drones.Code.Components.DefaultComp, asm: Drones}
       data:
-        SpawnInterval: 0
-        Timer: 0
-    - rid: 1245683535044411465
-      type: {class: ResourceSpawnerComponent, ns: Source.Drones.Code.Components.DefaultComp, asm: Drones}
+        SpawnInterval: 1
+        Timer: 1
+    - rid: 1245683542965616980
+      type: {class: DefaultViewComponent, ns: Source.Drones.Code.Components.DefaultComp, asm: Drones}
       data:
-        SpawnInterval: 0
-        Timer: 0
-    - rid: 1245683535044411466
-      type: {class: ResourceSpawnerComponent, ns: Source.Drones.Code.Components.DefaultComp, asm: Drones}
-      data:
-        SpawnInterval: 0
-        Timer: 0
-    - rid: 1245683535044411467
-      type: {class: ResourceSpawnerComponent, ns: Source.Drones.Code.Components.DefaultComp, asm: Drones}
-      data:
-        SpawnInterval: 0
-        Timer: 0
-    - rid: 1245683535044411468
-      type: {class: ResourceSpawnerComponent, ns: Source.Drones.Code.Components.DefaultComp, asm: Drones}
-      data:
-        SpawnInterval: 0
-        Timer: 0
-    - rid: 1245683535044411469
-      type: {class: ResourceSpawnerComponent, ns: Source.Drones.Code.Components.DefaultComp, asm: Drones}
-      data:
-        SpawnInterval: 0
-        Timer: 0
+        View:
+          viewSource:
+            providerId: 2
+            prefabId: 0

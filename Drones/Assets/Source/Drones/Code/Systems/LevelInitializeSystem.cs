@@ -1,6 +1,7 @@
 using ME.BECS;
 using ME.BECS.Jobs;
 using ME.BECS.Views;
+using Source.Drones.Code.Components.DefaultComp;
 using Unity.Burst;
 
 namespace Source.Drones.Code.Systems
@@ -15,6 +16,8 @@ namespace Source.Drones.Code.Systems
       var job = new LevelInitializeJob
       {
         SpawnerConfig = SpawnerConfig,
+        Context = ctx
+        
       };
 
       var handle = job.ScheduleSingle();
@@ -28,10 +31,11 @@ namespace Source.Drones.Code.Systems
   {
 
     public Config SpawnerConfig;
+    public SystemContext Context;
     
     public void Execute()
     {
-      var spawnerEnt = Ent.New("Spawner");
+      var spawnerEnt = Ent.New(Context,"Spawner");
       SpawnerConfig.Apply(spawnerEnt);
     }
   }
